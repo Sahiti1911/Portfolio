@@ -2,7 +2,7 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: 'https://Sahiti1911.github.io/Portfolio/',
+  baseHref: 'https://sahiti1911.github.io/Portfolio/',
   locale: undefined,
   routes: [
   {
@@ -12,9 +12,9 @@ export default {
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 43244, hash: '91f068d0b25553bd9a5cb7ad612450d47f0c6755bdd676a644b7411759e54774', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 9576, hash: '34c05330af11720020df65f4591029d4a9736e44e23f15d2b1e97191865a0cab', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'index.html': {size: 194496, hash: 'a062352162505c57d3bc07752170f55c08ef142d0741d35d11a6b4b18606b2a9', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 43244, hash: '56aa88d72df205568d947c0338168ee7ee0340812cc246b90e14ea774335f2d3', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 9576, hash: '47e9985cf170a76a1404fee7c7b467607e17567bfa7df16002f77a53866382f3', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'index.html': {size: 194495, hash: 'fa305f65afb4b574b0968d53f99a38208159311dee44dba2e4492f39a436d3f4', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
     'styles-LBQ7AFTE.css': {size: 378960, hash: 'Gdo4oi3JhkE', text: () => import('./assets-chunks/styles-LBQ7AFTE_css.mjs').then(m => m.default)}
   },
 };
