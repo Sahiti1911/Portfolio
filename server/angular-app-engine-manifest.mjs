@@ -1,6 +1,6 @@
 
 export default {
-  basePath: 'https://sahiti1911.github.io/Portfolio',
+  basePath: 'https://Sahiti1911.github.io/Portfolio',
   supportedLocales: {
   "en-US": ""
 },
