@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Front-End Web Development",
+    "issuer": "FreeCodeCamp",
+    "date": "Jan 2023",
+    "credentialId": "FCC-001"
+  },
+  {
+    "title": "Algorithms & Data Structures",
+    "issuer": "FreeCodeCamp",
+    "date": "Mar 2023",
+    "credentialId": "FCC-002"
+  },
+  {
+    "title": "Angular - The Complete Guide",
+    "issuer": "Udemy",
+    "date": "May 2023",
+    "credentialId": "UD-ANG-101"
+  },
+  {
+    "title": "RxJS Mastery",
+    "issuer": "Coursera",
+    "date": "Jul 2023",
+    "credentialId": "CO-RXJS-201"
+  },
+  {
+    "title": "Full-Stack Web Development",
+    "issuer": "Codecademy",
+    "date": "Aug 2023",
+    "credentialId": "CC-FS-301"
+  }
+]
