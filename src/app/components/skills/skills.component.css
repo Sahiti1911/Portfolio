@@ -1,6 +1,31 @@
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 per row */
-  gap: 2rem; /* spacing between cards */
-  justify-items: center; /* center cards in their cell */
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row on large screens */
+  gap: 1rem; /* moderate spacing between cards */
+  justify-items: center; /* center cards */
+  padding: 0 0.5rem; /* horizontal padding */
+}
+
+/* Large screens ≤1240px */
+@media (max-width: 1240px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 0.9rem;
+  }
+}
+
+/* Medium screens (tablets ≤992px) */
+@media (max-width: 992px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 0.8rem;
+  }
+}
+
+/* Small screens (phones ≤480px) */
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* 1 card per row */
+    gap: 0.5rem;
+  }
 }

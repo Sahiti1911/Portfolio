@@ -1,8 +1,8 @@
 .flip-card {
   perspective: 1000px;
-  width: 260px;
-  height: 320px;
-  margin: 20px;
+  width: 200px; /* moderately smaller */
+  height: 260px; /* moderately smaller */
+  margin: 15px; /* balanced margin */
 }
 
 .flip-card-inner {
@@ -23,11 +23,10 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 16px;
+  border-radius: 14px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 
-  /* Matching glassmorphism look */
   background: rgb(255 255 255 / 5%);
   backdrop-filter: blur(12px);
   border: 1.5px solid rgb(255 255 255 / 15%);
@@ -36,7 +35,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 16px;
   transition: all 0.4s ease-in-out;
 }
 
@@ -54,34 +53,33 @@
   );
   border: 1.5px solid rgba(138, 43, 226, 0.5);
   box-shadow:
-    0 0 20px rgba(138, 43, 226, 0.3),
-    0 0 30px rgba(255, 0, 128, 0.2);
+    0 0 18px rgba(138, 43, 226, 0.3),
+    0 0 25px rgba(255, 0, 128, 0.2);
 }
 
 .flip-card:hover .flip-card-front {
   border-color: rgba(138, 43, 226, 0.6);
   box-shadow:
-    0 12px 30px rgba(138, 43, 226, 0.35),
-    0 0 20px rgba(255, 0, 128, 0.25);
+    0 10px 28px rgba(138, 43, 226, 0.35),
+    0 0 18px rgba(255, 0, 128, 0.25);
 }
 
 .skill-icon {
-  font-size: 4rem; /* bigger = larger icon */
+  font-size: 3rem; /* readable size */
   line-height: 1;
 }
 
 .flip-card-front h5 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: bold;
   background: var(--accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Back content */
 .flip-card-back h6 {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  margin-bottom: 8px;
   color: #ff80df;
 }
 
@@ -93,6 +91,6 @@
 
 .flip-card-back li {
   color: #ddd;
-  margin: 6px 0;
-  font-size: 0.95rem;
+  margin: 5px 0;
+  font-size: 0.9rem;
 }
