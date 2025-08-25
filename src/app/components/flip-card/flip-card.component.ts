@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'sahiti-flip-card',
+  selector: 'app-flip-card',
   imports: [CommonModule],
   templateUrl: './flip-card.component.html',
   styleUrl: './flip-card.component.css',

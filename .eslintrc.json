@@ -1,7 +1,6 @@
 {
   "root": true,
   "ignorePatterns": ["projects/**/*"],
-  "plugins": ["custom-rules"],
   "overrides": [
     {
       "files": ["*.ts"],
@@ -11,7 +10,12 @@
         "plugin:prettier/recommended"
       ],
       "rules": {
-        "prettier/prettier": "error",
+        "prettier/prettier": [
+          "error",
+          {
+            "endOfLine": "lf"
+          }
+        ],
         "quotes": ["error", "single"],
         "semi": ["error", "always"],
         "@typescript-eslint/naming-convention": [
@@ -49,9 +53,7 @@
           {
             "argsIgnorePattern": "^_"
           }
-        ],
-        "custom-rules/no-any": "error",
-        "selector-naming/selector-naming": "error"
+        ]
       }
     },
     {

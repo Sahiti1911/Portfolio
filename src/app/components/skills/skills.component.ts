@@ -4,7 +4,7 @@ import { ApiService, Skill } from '../../services/api.service';
 import { FlipCardComponent } from '../flip-card/flip-card.component';
 
 @Component({
-  selector: 'sahiti-skills',
+  selector: 'app-skills',
   imports: [CommonModule, FlipCardComponent],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css',

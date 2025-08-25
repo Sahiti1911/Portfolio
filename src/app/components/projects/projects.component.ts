@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../services/api.service';
 
 @Component({
-  selector: 'sahiti-projects',
+  selector: 'app-projects',
   imports: [CommonModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css',

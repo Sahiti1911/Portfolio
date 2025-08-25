@@ -3,7 +3,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { ApiService, Certification } from '../../services/api.service';
 
 @Component({
-  selector: 'sahiti-certifications',
+  selector: 'app-certifications',
   imports: [CommonModule],
   templateUrl: './certifications.component.html',
   styleUrl: './certifications.component.css',

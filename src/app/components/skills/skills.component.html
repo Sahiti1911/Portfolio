@@ -5,10 +5,9 @@
     </h2>
 
     <div class="skills-grid justify-content-center">
-      <sahiti-flip-card *ngFor="let skill of skills" [skill]="skill.skill" [icon]="getIconClass(skill.skill)"
+      <app-flip-card *ngFor="let skill of skills" [skill]="skill.skill" [icon]="getIconClass(skill.skill)"
         [rating]="skill.rating" [tools]="skill.tools">
-      </sahiti-flip-card>
+      </app-flip-card>
     </div>
-
   </div>
 </section>

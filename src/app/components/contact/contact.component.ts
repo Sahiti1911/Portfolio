@@ -9,7 +9,7 @@ import {
 import emailjs from '@emailjs/browser';
 
 @Component({
-  selector: 'sahiti-contact',
+  selector: 'app-contact',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './contact.component.html',

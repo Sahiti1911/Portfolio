@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
+import certificateData from './certificate.json';
+import skillsData from './skills.json';
 
 export interface Certification {
   title: string;
@@ -27,21 +29,10 @@ export class ApiService {
   }
 
   getCertifications(): Observable<Certification[]> {
-    return this.http.get<Certification[]>('assets/certificate.json');
+    return of(certificateData);
   }
 
-  // getSkills(): Observable<string[]> {
-  //   return this.http.get<any[]>(this.githubUrl).pipe(
-  //     map((repos) => {
-  //       const languages = repos
-  //         .map((repo) => repo.language)
-  //         .filter((lang) => !!lang);
-
-  //       return Array.from(new Set(languages));
-  //     }),
-  //   );
-  // }
   getSkills(): Observable<Skill[]> {
-    return this.http.get<Skill[]>('assets/skills.json');
+    return of(skillsData);
   }
 }
