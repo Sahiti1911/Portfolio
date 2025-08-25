@@ -1,0 +1,70 @@
+input::placeholder,
+textarea::placeholder {
+  color: #bbb;
+  opacity: 1;
+  font-style: italic;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #ddd;
+}
+
+.glass-input {
+  background: rgb(255 255 255 / 5%);
+  border: 1px solid rgb(255 255 255 / 20%);
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+}
+
+.glass-input:hover,
+.glass-input:focus {
+  transform: translateY(-3px);
+  border-color: rgb(138 43 226 / 60%);
+  box-shadow: 0 6px 20px rgb(138 43 226 / 35%);
+  outline: none;
+}
+.toast-container {
+  position: fixed;
+  top: 20px; /* or bottom: 20px; */
+  right: 20px;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.glass-toast {
+  min-width: 250px;
+  padding: 0.9rem 1.2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  background: rgb(255 255 255 / 5%);
+  border: 1px solid rgb(255 255 255 / 20%);
+  color: white;
+  font-style: italic;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 25%);
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: slideIn 0.4s forwards;
+}
+
+.glass-toast.success {
+  border-color: rgb(0 255 127 / 40%);
+  box-shadow: 0 4px 15px rgb(0 255 127 / 25%);
+}
+
+.glass-toast.error {
+  border-color: rgb(255 69 58 / 40%);
+  box-shadow: 0 4px 15px rgb(255 69 58 / 25%);
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

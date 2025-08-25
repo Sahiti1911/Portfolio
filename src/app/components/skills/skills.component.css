@@ -1,0 +1,6 @@
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 per row */
+  gap: 2rem; /* spacing between cards */
+  justify-items: center; /* center cards in their cell */
+}

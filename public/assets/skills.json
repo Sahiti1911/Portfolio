@@ -1,0 +1,37 @@
+[
+  {
+    "skill": "HTML",
+    "rating": "⭐️⭐️⭐️⭐️⭐️",
+    "tools": ["Flexbox", "Grid", "Animations"]
+  },
+  {
+    "skill": "C++",
+    "rating": "⭐️⭐️⭐️",
+    "tools": ["OOP", "STL", "Algorithms"]
+  },
+  {
+    "skill": "Python",
+    "rating": "⭐️⭐️⭐️⭐️",
+    "tools": ["Flask", "Django", "NumPy"]
+  },
+  {
+    "skill": "TypeScript",
+    "rating": "⭐️⭐️⭐️⭐️⭐️",
+    "tools": ["ESLint", "Prettier", "TSLint"]
+  },
+  {
+    "skill": "JavaScript",
+    "rating": "⭐️⭐️⭐️⭐️",
+    "tools": ["Node.js", "Express", "DOM APIs"]
+  },
+  {
+    "skill": "PHP",
+    "rating": "⭐️⭐️⭐️",
+    "tools": ["Laravel", "Composer", "Symfony"]
+  },
+  {
+    "skill": "Jupyter Notebook",
+    "rating": "⭐️⭐️⭐️⭐️",
+    "tools": ["Pandas", "Matplotlib", "Scikit-learn"]
+  }
+]

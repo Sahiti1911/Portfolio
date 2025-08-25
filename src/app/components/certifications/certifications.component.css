@@ -1,0 +1,57 @@
+/* Card styling */
+.cert-card {
+  background: #0f0f0f;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 1.5rem;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(138, 43, 226, 0.5);
+}
+
+/* Icon wrapper */
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1rem auto;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* Gradient Icon (normal) */
+.icon-wrapper i {
+  font-size: 2rem;
+  background: linear-gradient(135deg, #4b00ff, #8a2be2, #f0aefc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect: turn white */
+.cert-card:hover .icon-wrapper i {
+  -webkit-text-fill-color: #fff;
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* Text */
+.cert-card h5 {
+  color: #fff;
+  font-weight: 600;
+}
+
+.cert-card p {
+  color: #aaa;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,18 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "no-empty-source": null,
+    "block-no-empty": true,
+    "declaration-no-important": true,
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-declaration"]
+      }
+    ],
+    "unit-allowed-list": ["%", "deg", "px", "rem", "ms", "s"],
+    "declaration-block-no-duplicate-properties": true,
+    "no-duplicate-selectors": true
+  }
+}

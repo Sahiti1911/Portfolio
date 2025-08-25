@@ -1,0 +1,17 @@
+<div [ngClass]="{ 'flip-card': true, 'flipped': flipped }" (click)="toggleFlip()">
+
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <i [class]="icon" class="skill-icon"></i>
+      <h3>{{ skill }}</h3>
+    </div>
+
+    <div class="flip-card-back">
+      <p><strong>Rating:</strong> {{ rating }}</p>
+      <p><strong>Tools:</strong></p>
+      <ul>
+        <li *ngFor="let tool of tools">{{ tool }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

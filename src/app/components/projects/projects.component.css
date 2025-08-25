@@ -1,0 +1,32 @@
+/* Projects Section */
+.project-card {
+  border-radius: 16px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(138, 43, 226, 0.5);
+}
+
+.btn-project {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-project i {
+  transition: transform 0.3s ease;
+}
+.btn-project:hover i {
+  transform: translateX(4px);
+}
